@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -10,24 +10,28 @@
     <h1>Company Inc.</h1>
     <h2>For all your incorporated company needs</h2>
 
-    <!-- First, create a form tag where our inputs will be nested -->
+    <input type="text" placeholder="email">
+
 
 
       <!-- Add a label for 'fullname'-->
 
       <!-- Add a text input with the id and name attributes set to 'fullname' -->
+    
       <!-- Include the place holder text "Enter Name" and make this input required -->
 
 
       <!-- Add a label for 'email'-->
 
       <!-- Add a email input with the id and name attributes set to 'email' -->
+      
       <!-- Include the place holder text "Enter Email" and make this input required -->
 
 
       <!-- Add a label for 'phone'-->
 
       <!-- Add a telephone input with the id and name attributes set to 'phone' -->
+
       <!-- Include the place holder text "Enter Telephone (optional)" -->
 
 
@@ -43,6 +47,49 @@
 
       <!-- Add an input with the type set to 'submit' -->
 
-    
+<!--     
   </body>
+</html> --> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <h2>Contact Us</h2>
+
+    <form action="your-backend-processing-script.php" method="POST">
+        <!-- Full Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Name" required>
+
+        <!-- Email Address -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+        <!-- Telephone Number -->
+        <label for="phone">Telephone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Telephone (optional)">
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter Message"></textarea>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="checkbox" name="subscribe">
+        <label for="checkbox">Subscribe to our newsletter</label>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
 </html>
